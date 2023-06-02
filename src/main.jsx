@@ -17,11 +17,6 @@ const router = createBrowserRouter([
     loader: () =>fetch('https://new-coffe-server.vercel.app/coffee')
   },
   {
-    path: "/viewcoffee/:id",
-    element: <ViewCoffee />,
-    loader:({params}) => fetch(`https://new-coffe-server.vercel.app/coffee/${params.id}`)
-  },
-  {
     path: "/addCoffee",
     element: <AddCoffee />,
   },
